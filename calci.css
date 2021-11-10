@@ -124,22 +124,27 @@ body
   @media (max-width: 500px) {
     .display #screen 
     {
-        width: 94%;
+        width: 91%;
     }
     .container
     {
         margin-left: 0px;
-        width: 250px;
+        width: 210px;
+        box-shadow: 10px 10px 20px #000000,
+                    -8px -8px 15px #3d3d3d;
     }
     .row button 
     {
-        width: 11.337%;
+        margin: 2px;
+        width: 13.1%;
         border-radius: 10px;
-        font-size: 12px;
+        font-size: 9px;
+        box-shadow: 5px 5px 8px #000000,
+                    -2px -2px 5px #3d3d3d;
     }
     .row span 
     {
-        font-size: 10px;
+        font-size: 8px;
     }
 
   }
