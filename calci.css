@@ -104,7 +104,7 @@ body
                 inset -5px -5px 8px rgb(128, 72, 20);
 }
 
-@media (max-width: 1800px) {
+/*@media (max-width: 1500px) {
     .display #screen 
     {
         width: 94%;
@@ -119,9 +119,9 @@ body
         width: 13.4%;
         border-radius: 4px;
     }
-  }
+  }*/
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1300px) {
     .display #screen 
     {
         width: 91%;
