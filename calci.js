@@ -11,48 +11,39 @@ var btn=document.querySelectorAll('.btn');
         });
     }
 
-    function multiply()
+    function operan(param)
     {
         var a = screen.value.length;
-        if (screen.value[a-1]=='*') {
+        if (screen.value[a-1]=='*') 
+        {
             var b=screen.value.substr(0,screen.value.length-1);
-            screen.value=b+'*';
-        } else {
-            screen.value+='*';
-        } 
-    }
+            screen.value=b+param;
+        }   else 
+            {  
+                if (screen.value[a-1]=='/') 
+                {
+                    var b=screen.value.substr(0,screen.value.length-1);
+                    screen.value=b+param;
+                }   else 
+                    {
+                        if (screen.value[a-1]=='+') 
+                        {
+                            var b=screen.value.substr(0,screen.value.length-1);
+                            screen.value=b+param;
+                        }   else 
+                            {
+                                if (screen.value[a-1]=='-') 
+                                {
+                                    var b=screen.value.substr(0,screen.value.length-1);
+                                    screen.value=b+param;
+                                }   else 
+                                    {
+                                    screen.value+=param
+                                    }
+                            }
 
-    function div()
-    {
-        var a = screen.value.length;
-        if (screen.value[a-1]=='/') {
-            var b=screen.value.substr(0,screen.value.length-1);
-            screen.value=b+'/';
-        } else {
-            screen.value+='/';
-        } 
-    }
-    
-    function plus()
-    {
-        var a = screen.value.length;
-        if (screen.value[a-1]=='+') {
-            var b=screen.value.substr(0,screen.value.length-1);
-            screen.value=b+'+';
-        } else {
-            screen.value+='+';
-        } 
-    }
-
-    function min()
-    {
-        var a = screen.value.length;
-        if (screen.value[a-1]=='-') {
-            var b=screen.value.substr(0,screen.value.length-1);
-            screen.value=b+'-';
-        } else {
-            screen.value+='-';
-        } 
+                    }
+            }
     }
 
     function sin()
