@@ -38,7 +38,14 @@ var btn=document.querySelectorAll('.btn');
                                     screen.value=b+param;
                                 }   else 
                                     {
-                                    screen.value+=param
+                                        if (screen.value[a-1]=='.') 
+                                        {
+                                            var b=screen.value.substr(0,screen.value.length-1);
+                                            screen.value=b+param;
+                                        }   else 
+                                            {
+                                                screen.value+=param
+                                            }
                                     }
                             }
 
