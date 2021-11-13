@@ -19,7 +19,6 @@ body
               -13px -13px 20px #3d3d3d; 
 }
 
-
 .row button 
 {
     width: 13.6%;
@@ -121,7 +120,7 @@ body
     }
   }*/
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1000px) {
     .display #screen 
     {
         width: 91%;

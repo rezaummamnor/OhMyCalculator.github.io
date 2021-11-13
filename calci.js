@@ -6,18 +6,53 @@ var btn=document.querySelectorAll('.btn');
     {
         item.addEventListener('click',(e)=>{
             btntext=e.target.innerText;
-
-            if(btntext =='×')
-            {
-                btntext= '*';
-            }
-
-            if(btntext=='÷')
-            {
-                btntext='/';
-            }
             screen.value+=btntext;
+
         });
+    }
+
+    function multiply()
+    {
+        var a = screen.value.length;
+        if (screen.value[a-1]=='*') {
+            var b=screen.value.substr(0,screen.value.length-1);
+            screen.value=b+'*';
+        } else {
+            screen.value+='*';
+        } 
+    }
+
+    function div()
+    {
+        var a = screen.value.length;
+        if (screen.value[a-1]=='/') {
+            var b=screen.value.substr(0,screen.value.length-1);
+            screen.value=b+'/';
+        } else {
+            screen.value+='/';
+        } 
+    }
+    
+    function plus()
+    {
+        var a = screen.value.length;
+        if (screen.value[a-1]=='+') {
+            var b=screen.value.substr(0,screen.value.length-1);
+            screen.value=b+'+';
+        } else {
+            screen.value+='+';
+        } 
+    }
+
+    function min()
+    {
+        var a = screen.value.length;
+        if (screen.value[a-1]=='-') {
+            var b=screen.value.substr(0,screen.value.length-1);
+            screen.value=b+'-';
+        } else {
+            screen.value+='-';
+        } 
     }
 
     function sin()
